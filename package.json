@@ -1,0 +1,49 @@
+{
+  "name": "rpg-dungeon-desk",
+  "productName": "RPG Dungeon Desk",
+  "version": "2.0.0",
+  "description": "RPG map maker and world builder - create world maps, towns, dungeons and the lore behind them.",
+  "main": "electron/main.js",
+  "author": "Josh Parkinson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a44kaliburll/RPG-DungeonDesk.git"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis",
+    "pack": "electron-builder --dir"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.josh.rpgdungeondesk",
+    "productName": "RPG Dungeon Desk",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron/**/*",
+      "app/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "RPG Dungeon Desk"
+    }
+  }
+}

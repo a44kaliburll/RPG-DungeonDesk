@@ -1,0 +1,11 @@
+# dependencies
+node_modules/
+
+# build output (installers go to GitHub Releases, not the repo)
+dist/
+
+# local tooling / editor state
+.claude/
+*.log
+Thumbs.db
+.DS_Store
