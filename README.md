@@ -4,6 +4,14 @@ A desktop RPG map maker and world builder — think Inkarnate crossed with World
 Draw world maps, towns and dungeons, then flesh out the lore behind every place with a
 built-in World Codex, and connect the two with lore pins.
 
+## ⬇️ Download
+
+**[Download the Windows installer (v2.0.0)](https://github.com/a44kaliburll/RPG-DungeonDesk/releases/latest)** — no build tools needed.
+
+The installer is unsigned, so Windows SmartScreen will warn on first run: click
+**More info → Run anyway**. Installs per-user (no admin rights) with desktop and
+Start-menu shortcuts.
+
 ## Features
 
 **Map making**
